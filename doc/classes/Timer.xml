@@ -5,6 +5,7 @@
 	</brief_description>
 	<description>
 		Counts down a specified interval and emits a signal on reaching 0. Can be set to repeat or "one-shot" mode.
+		After a timer enters the tree, it can be manually started with [method start]. A timer node is also started automatically if [member autostart] is [code]true[/code].
 		[b]Note:[/b] Timers are affected by [member Engine.time_scale], a higher scale means quicker timeouts, and vice versa.
 		[b]Note:[/b] To create a one-shot timer without instantiating a node, use [method SceneTree.create_timer].
 	</description>
